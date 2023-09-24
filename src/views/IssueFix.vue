@@ -3,7 +3,7 @@
 </script>
 
 <template>
-BUG修复page
+  问题修复page
 </template>
 
 <style scoped>

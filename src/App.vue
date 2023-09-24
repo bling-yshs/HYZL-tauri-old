@@ -5,7 +5,8 @@
         theme="light"
     >
       <div class="logo"/>
-      <a-menu v-model:selectedKeys="selectedKeys" theme="light" mode="inline" :style="{height: '100vh'}">
+      <a-menu v-model:selectedKeys="selectedKeys" theme="light" mode="inline"
+              :style="{padding:'1rem',height: '100vh'}">
         <a-menu-item key="1">
           <RocketTwoTone/>
           <span class="nav-text">一键启动</span>
@@ -18,8 +19,8 @@
         </a-menu-item>
         <a-menu-item key="3">
           <BugTwoTone/>
-          <span class="nav-text">BUG修复</span>
-          <RouterLink to="/bug-fix"></RouterLink>
+          <span class="nav-text">问题修复</span>
+          <RouterLink to="/issue-fix"></RouterLink>
         </a-menu-item>
         <a-menu-item key="4">
           <SettingTwoTone/>
@@ -55,7 +56,9 @@ const selectedKeys = ref<string[]>(['1']);
 #functionPage {
   height: 100vh;
 }
-.ant-layout{
+
+
+.ant-layout {
   background-color: #fff;
 }
 

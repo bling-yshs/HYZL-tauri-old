@@ -22,8 +22,8 @@ const router = createRouter({
                     component: () => import('../views/Management.vue')
                 },
                 {
-                    path: "/bug-fix",
-                    component: () => import('../views/BugFix.vue')
+                    path: "/issue-fix",
+                    component: () => import('../views/IssueFix.vue')
                 },
                 {
                     path: "/setting",
