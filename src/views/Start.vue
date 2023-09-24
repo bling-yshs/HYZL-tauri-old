@@ -3,7 +3,7 @@ import {message} from "ant-design-vue";
 import {invoke} from "@tauri-apps/api/tauri";
 import {ref} from "vue";
 import {CaretRightOutlined} from "@ant-design/icons-vue";
-import { h } from 'vue';
+import {h} from 'vue';
 import {StringDataResponse} from "../entity/String/string_data_response.ts";
 
 const startYunzaiLoadingState = ref<boolean>(false);
@@ -28,7 +28,8 @@ const startYunzai = () => {
   <div id="main">
     <a-space direction="vertical">
       <a-space direction="horizontal">
-        <a-button type="primary"
+        <a-button id="startButton"
+                  type="primary"
                   :loading="startYunzaiLoadingState"
                   :icon="h(CaretRightOutlined)"
                   @click="startYunzai">
@@ -44,6 +45,11 @@ const startYunzai = () => {
 
 <style scoped>
 #main {
-  padding: 1rem;
+  padding: 1.5rem;
 }
+
+#startButton {
+}
+
+
 </style>

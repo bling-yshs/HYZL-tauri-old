@@ -16,6 +16,14 @@ impl<T> ReturnData<T> {
         }
     }
 
+    pub fn fast_success(message: String) -> ReturnData<String> {
+        ReturnData {
+            code: 200,
+            data: String::new(),
+            message,
+        }
+    }
+
     pub fn run_failure(message: String) -> ReturnData<String> {
         ReturnData {
             code: 500,
